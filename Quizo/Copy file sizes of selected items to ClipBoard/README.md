@@ -1,0 +1,1 @@
+Copy file sizes of selected items to ClipBoard

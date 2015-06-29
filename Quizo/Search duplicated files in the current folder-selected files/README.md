@@ -1,0 +1,1 @@
+Search duplicated files in the current folder  selected files
