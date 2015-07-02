@@ -58,14 +58,14 @@ if (exists) {
 }
 
 function maybeAdd(path) {
-	if (6 == qs.Messagebox(path + "\nWas not found in " + namespace + ' : ' + path + '\rWould you like to Add it?', "YesNo")) {
+	if (6 == qs.Messagebox(path + "\nWas not found in " + namespace  + '\rWould you like to Add it?', "YesNo")) {
 		paths.push(path);
 		env("PATH") = paths.join(';');
 	}
 }
 
 function maybeDelete(path) {
-	if (6 == qs.Messagebox(path + "\nWas found in " + namespace + ' : ' + path + '\rWould you like to Delete it?', "YesNo")) {
+	if (6 == qs.Messagebox(path + "\nWas found in " + namespace  + '\rWould you like to Delete it?', "YesNo")) {
 		paths.splice(paths.indexOf(path), 1);
 		env("PATH") = paths.join(';');
 	}
